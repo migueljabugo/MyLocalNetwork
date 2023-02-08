@@ -3,8 +3,11 @@ body {
 }
 
 .error-page {
-    min-height: 85vh;
+    height: 400px;
     padding: 100px 50px;
+    background-color: #c5c5c5;
+    margin-top: 40px;
+    border-radius: 10px;
 }
 .error-page .title i {
     color: red;
