@@ -1,0 +1,24 @@
+body {
+    background-color: #e8e8e8;
+}
+
+.error-page {
+    height: 400px;
+    padding: 100px 50px;
+    background-color: #c5c5c5;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+.error-page .title i {
+    color: red;
+}
+.error-page .description .path {
+    font-weight: 700;
+}
+.error-page .description .buttom {
+    padding: 20px 10px;
+}
+.error-page .description .link-to-home {
+    background-color: #005ab3;
+    color: white;
+}
