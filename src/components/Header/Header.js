@@ -1,15 +1,34 @@
 import './Header.css';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Navbar, Offcanvas, Nav } from 'react-bootstrap';
+import { Link } from 'wouter';
 
 function Header() {
   return (
-    <Container>
-      <Row>
-        <Col className='text-center'>
-          <h1>Header</h1>
-        </Col>
-      </Row>
-    </Container>
+    <Navbar>
+      <Container fluid>
+        <Navbar.Brand>
+          <Link to='/'>Title</Link>
+        </Navbar.Brand>
+        <Navbar.Toggle />
+            <Navbar.Offcanvas>
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title>
+                  Offcanvas
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <Nav>
+                  <Nav.Link>
+                    <Link to='/'>Home</Link>
+                  </Nav.Link>
+                  <Nav.Link>
+                    <Link to='/Contact'>Contact</Link>
+                  </Nav.Link>
+                </Nav>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+      </Container>
+    </Navbar>
   );
 }
 
